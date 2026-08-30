@@ -4,23 +4,26 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta name="description"
-          content="Дмитрий Бардин, Senior Frontend Developer: React, TypeScript, Next.js, enterprise frontend architecture, AI search, data-intensive web applications.">
+          content="Дмитрий Бардин, Senior / Lead Frontend Developer: React, Next.js, TypeScript, enterprise frontend architecture, semantic search, Strapi, data-intensive web applications.">
     <meta name="theme-color" content="#eef4f7">
-    <meta property="og:title" content="Дмитрий Бардин — Senior Frontend Developer">
+    <meta property="og:title" content="Дмитрий Бардин — Senior / Lead Frontend Developer">
     <meta property="og:description"
-          content="10+ лет в frontend-разработке enterprise и data-интенсивных web-приложений. React, TypeScript, Next.js, Angular.">
+          content="13+ лет в разработке, frontend-фокус с 2016 года. React, Next.js, TypeScript, Angular, Strapi, OpenSearch.">
     <meta property="og:type" content="website">
     <meta property="og:image" content="assets/images/profile.jpg">
-    <title>Дмитрий Бардин — Senior Frontend Developer</title>
+    <title>Дмитрий Бардин — Senior / Lead Frontend Developer</title>
     <link rel="icon" href="assets/images/favicon.svg" type="image/svg+xml">
     <link rel="preload" href="assets/images/profile.webp" as="image" type="image/webp">
+    <script>
+        document.documentElement.classList.add('is-enhanced');
+    </script>
     <link rel="stylesheet" href="styles/main.css">
     <script type="application/ld+json">
         {
             "@context": "https://schema.org",
             "@type": "Person",
             "name": "Дмитрий Бардин",
-            "jobTitle": "Senior Frontend Developer",
+            "jobTitle": "Senior / Lead Frontend Developer",
             "email": "mailto:dmitriy.bardin90@gmail.com",
             "telephone": "+79183401086",
             "address": {
@@ -29,7 +32,9 @@
                 "addressCountry": "RU"
             },
             "sameAs": [
-                "https://linkedin.com/in/dmitriy-bardin",
+                "https://www.linkedin.com/in/dmitriy-bardin/",
+                "https://github.com/divirus",
+                "https://divirus.github.io/webCV",
                 "https://t.me/divirus"
             ],
             "knowsAbout": [
@@ -38,8 +43,10 @@
                 "TypeScript",
                 "Angular",
                 "Frontend Architecture",
-                "AI search",
-                "OpenSearch"
+                "Semantic search",
+                "OpenSearch",
+                "Strapi",
+                "Hugging Face language models"
             ]
         }
     </script>
@@ -59,6 +66,7 @@
             <a href="#skills" data-i18n="navSkills">Навыки</a>
             <a href="#experience" data-i18n="navExperience">Опыт</a>
             <a href="#projects" data-i18n="navProjects">Проекты</a>
+            <a href="#education" data-i18n="navEducation">Образование</a>
             <a href="#contacts" data-i18n="navContacts">Контакты</a>
         </nav>
         <div class="language-switcher" role="group" aria-label="Переключить язык"
@@ -82,11 +90,11 @@
     <section class="hero section" id="top" aria-labelledby="hero-title">
         <div class="container hero__grid">
             <div class="hero__content reveal">
-                <p class="eyebrow" data-i18n="role">Senior Frontend Developer</p>
+                <p class="eyebrow" data-i18n="role">Senior / Lead Frontend Developer</p>
                 <h1 id="hero-title" data-i18n="name">Дмитрий Бардин</h1>
                 <p class="hero__lead" data-i18n="heroLead">
-                    Проектирую масштабируемые frontend-архитектуры, развиваю enterprise-продукты и создаю сложные
-                    интерфейсы для данных.
+                    Разрабатываю enterprise- и data-intensive web-приложения на React, Next.js и TypeScript, работаю со
+                    сложной бизнес-логикой, интеграциями и данными.
                 </p>
                 <div class="hero__actions" aria-label="Основные действия" data-i18n-attr="aria-label:heroActionsAria">
                     <a class="button button--primary"
@@ -107,15 +115,19 @@
                 <dl class="hero__facts" aria-label="Краткая информация" data-i18n-attr="aria-label:factsAria">
                     <div>
                         <dt data-i18n="factExperienceLabel">Опыт</dt>
-                        <dd data-i18n="factExperienceValue">10+ лет</dd>
+                        <dd data-i18n="factExperienceValue">13+ лет</dd>
                     </div>
                     <div>
                         <dt data-i18n="factFocusLabel">Фокус</dt>
                         <dd>React / TypeScript / Next.js</dd>
                     </div>
                     <div>
+                        <dt data-i18n="factWorkSetupLabel">Формат</dt>
+                        <dd data-i18n="workSetup">8+ лет удалённо</dd>
+                    </div>
+                    <div>
                         <dt data-i18n="factLocationLabel">Локация</dt>
-                        <dd data-i18n="location">Краснодар, Россия</dd>
+                        <dd data-i18n="location">Краснодар, готов к релокации</dd>
                     </div>
                 </dl>
             </div>
@@ -127,12 +139,14 @@
                          data-i18n-attr="alt:profileAlt">
                 </picture>
                 <div class="profile-card__body">
-                    <p class="profile-card__name" data-i18n="role">Senior Frontend Developer</p>
+                    <p class="profile-card__name" data-i18n="role">Senior / Lead Frontend Developer</p>
                     <ul class="contact-list">
                         <li><a href="tel:+79183401086">+7 918 340 10 86</a></li>
                         <li><a href="mailto:dmitriy.bardin90@gmail.com">dmitriy.bardin90@gmail.com</a></li>
-                        <li><a href="https://linkedin.com/in/dmitriy-bardin" target="_blank" rel="noreferrer">linkedin.com/in/dmitriy-bardin</a>
-                        </li>
+                        <li><a href="https://t.me/divirus" target="_blank" rel="noreferrer">Telegram @divirus</a></li>
+                        <li><a href="https://www.linkedin.com/in/dmitriy-bardin/" target="_blank" rel="noreferrer">LinkedIn</a></li>
+                        <li><a href="https://github.com/divirus" target="_blank" rel="noreferrer">GitHub</a></li>
+                        <li><a href="https://divirus.github.io/webCV" target="_blank" rel="noreferrer">Portfolio</a></li>
                     </ul>
                 </div>
             </aside>
@@ -147,14 +161,15 @@
             </div>
             <div class="rich-text reveal">
                 <p data-i18n="summaryTextOne">
-                    Senior Frontend Developer с 10+ годами опыта в разработке enterprise и data-интенсивных
-                    web-приложений. Специализируюсь на проектировании масштабируемых frontend-архитектур, миграциях
-                    Angular → React и создании сложных пользовательских интерфейсов.
+                    Senior Frontend Developer: 13+ лет в разработке; с 2016 года основная специализация — frontend.
+                    Разрабатываю enterprise- и data-intensive web-приложения на React, Next.js и TypeScript, работаю со
+                    сложной бизнес-логикой, интеграциями и данными.
                 </p>
                 <p data-i18n="summaryTextTwo">
-                    Разрабатываю продуктовые фичи end-to-end: от декомпозиции и проектирования до production. Работаю с
-                    React, Next.js, TypeScript и внедряю AI-функциональность: LLM, поиск по данным, OpenSearch.
-                    Развиваюсь в направлении Team Lead: менторинг, архитектура, координация разработки.
+                    Есть опыт самостоятельного владения frontend-частью продукта, миграции Angular → React, участия в
+                    выборе технологического стека и создания новых решений с нуля. Работаю напрямую с Product, Design,
+                    Backend и QA, декомпозирую задачи, участвую в технических решениях, распределял задачи и менторил
+                    junior-разработчика.
                 </p>
             </div>
         </div>
@@ -172,26 +187,27 @@
                 <article class="achievement-card reveal">
                     <span class="achievement-card__number">01</span>
                     <h3 data-i18n="achievementOneTitle">Миграция Angular → React</h3>
-                    <p data-i18n="achievementOneText">Участвовал в миграции enterprise-продукта без остановки
-                        разработки.</p>
+                    <p data-i18n="achievementOneText">Участвовал в миграции ADCM на React в команде из 3
+                        frontend-разработчиков; переход сделал кодовую базу чище, удобнее для поддержки и повысил
+                        производительность приложения.</p>
                 </article>
                 <article class="achievement-card reveal">
                     <span class="achievement-card__number">02</span>
-                    <h3 data-i18n="achievementTwoTitle">AI-поиск по документации</h3>
-                    <p data-i18n="achievementTwoText">Разработал POC поиска по документации на базе OpenSearch и
-                        LLM.</p>
+                    <h3 data-i18n="achievementTwoTitle">Semantic search по документации</h3>
+                    <p data-i18n="achievementTwoText">Провёл исследование решений и реализовал POC на OpenSearch с
+                        языковыми моделями Hugging Face.</p>
                 </article>
                 <article class="achievement-card reveal">
                     <span class="achievement-card__number">03</span>
-                    <h3 data-i18n="achievementThreeTitle">Data-интерфейсы</h3>
-                    <p data-i18n="achievementThreeText">Создавал аналитические интерфейсы, мониторинг данных, карты и
-                        dashboards.</p>
+                    <h3 data-i18n="achievementThreeTitle">Greenfield web platform</h3>
+                    <p data-i18n="achievementThreeText">Участвовал в создании корпоративной web-платформы с нуля на
+                        Next.js и Strapi, включая frontend, CMS-слой и POC движка диаграмм.</p>
                 </article>
                 <article class="achievement-card reveal">
                     <span class="achievement-card__number">04</span>
                     <h3 data-i18n="achievementFourTitle">Финансовые продукты</h3>
-                    <p data-i18n="achievementFourText">Разрабатывал интерфейсы кредитов и рассрочек для крупной
-                        retail-платформы.</p>
+                    <p data-i18n="achievementFourText">Был основным frontend-разработчиком pre-release продукта выбора
+                        кредита и рассрочки для крупной retail-платформы.</p>
                 </article>
             </div>
         </div>
@@ -214,7 +230,9 @@
                         <li>JavaScript</li>
                         <li>Redux</li>
                         <li>RxJS</li>
-                        <li>Vue</li>
+                        <li>Vue.js</li>
+                        <li>HTML</li>
+                        <li>CSS</li>
                     </ul>
                 </section>
                 <section class="skill-group reveal" aria-labelledby="architecture-title">
@@ -223,6 +241,9 @@
                         <li>Frontend Architecture</li>
                         <li>Scalable UI</li>
                         <li>Enterprise Applications</li>
+                        <li>Maintainability</li>
+                        <li>Performance</li>
+                        <li>Migrations</li>
                         <li>REST API</li>
                         <li>GraphQL</li>
                     </ul>
@@ -231,8 +252,10 @@
                     <h3 id="ai-title">AI &amp; Data</h3>
                     <ul class="tag-list">
                         <li>LLM integrations</li>
-                        <li>AI search</li>
+                        <li>Semantic search</li>
+                        <li>Hugging Face</li>
                         <li>OpenSearch</li>
+                        <li>Strapi</li>
                         <li>PostgreSQL</li>
                         <li>MS SQL</li>
                         <li>MySQL</li>
@@ -253,6 +276,16 @@
                         <li>Yarn</li>
                     </ul>
                 </section>
+                <section class="skill-group reveal" aria-labelledby="leadership-title">
+                    <h3 id="leadership-title">Leadership</h3>
+                    <ul class="tag-list">
+                        <li>Task decomposition</li>
+                        <li>Delegation</li>
+                        <li>Mentoring</li>
+                        <li>Technical decisions</li>
+                        <li>Product collaboration</li>
+                    </ul>
+                </section>
             </div>
         </div>
     </section>
@@ -271,26 +304,22 @@
                     </div>
                     <div class="timeline-item__content">
                         <h3>Senior Frontend Developer</h3>
-                        <p data-i18n="experienceOneIntro">Работа над несколькими продуктами компании, включая развитие
-                            Arenadata Cluster Manager и разработку нового проекта.</p>
+                        <p data-i18n="experienceOneIntro">Enterprise-продукты для управления и обработки данных.</p>
                         <ul>
-                            <li data-i18n="experienceOneBulletOne">Владел frontend-частью продукта: разработка,
-                                поддержка, развитие.
+                            <li data-i18n="experienceOneBulletOne">Самостоятельно отвечал за frontend-разработку и поддержку Angular-версии Arenadata Cluster Manager.
                             </li>
-                            <li data-i18n="experienceOneBulletTwo">Инициировал и участвовал в миграции Angular → React
-                                без остановки разработки.
+                            <li data-i18n="experienceOneBulletTwo">Участвовал в миграции ADCM с Angular на React в команде из 3 frontend-разработчиков.
                             </li>
-                            <li data-i18n="experienceOneBulletThree">Участвую в разработке нового проекта на Next.js с
-                                современной frontend-архитектурой.
+                            <li data-i18n="experienceOneBulletThree">Развивал несколько продуктов Arenadata, работая напрямую с Product, Design, Backend и QA.
                             </li>
-                            <li data-i18n="experienceOneBulletFour">Проектировал интеграции frontend с backend API и
-                                сложные UI для управления data-инфраструктурой.
+                            <li data-i18n="experienceOneBulletFour">Участвовал в создании корпоративной web-платформы с нуля на Next.js и Strapi, включая frontend и CMS-часть.
                             </li>
-                            <li data-i18n="experienceOneBulletFive">Разработал POC AI-поиска по документации и менторил
-                                junior-разработчика.
+                            <li data-i18n="experienceOneBulletFive">Исследовал associative/semantic search по документации и собрал POC на OpenSearch с Hugging Face language models.
+                            </li>
+                            <li data-i18n="experienceOneBulletSix">Менторил junior-разработчика и при необходимости распределял задачи между разработчиками.
                             </li>
                         </ul>
-                        <p class="stack">React, Next.js, TypeScript, Angular, OpenSearch, REST API, Recharts, Vue</p>
+                        <p class="stack">React, Next.js, TypeScript, Angular, Strapi, OpenSearch, REST API, Recharts, Vue.js</p>
                     </div>
                 </article>
                 <article class="timeline-item reveal">
@@ -300,17 +329,14 @@
                     </div>
                     <div class="timeline-item__content">
                         <h3>Senior Frontend Developer</h3>
-                        <p data-i18n="experienceTwoIntro">Разработка интерфейсов финансовых продуктов для
-                            retail-платформы.</p>
+                        <p data-i18n="experienceTwoIntro">Клиентский финансовый продукт для официального интернет-магазина.</p>
                         <ul>
-                            <li data-i18n="experienceTwoBulletOne">Разработал интерфейс расчёта кредитных и рассрочных
-                                продуктов.
+                            <li data-i18n="experienceTwoBulletOne">Был основным frontend-разработчиком pre-release продукта выбора кредита и рассрочки.
                             </li>
                             <li data-i18n="experienceTwoBulletTwo">Реализовал сложную бизнес-логику, валидации и
                                 интеграции с backend-сервисами.
                             </li>
-                            <li data-i18n="experienceTwoBulletThree">Участвовал в развитии пользовательских сценариев
-                                оформления кредитов.
+                            <li data-i18n="experienceTwoBulletThree">Развивал продукт до предрелизной стадии в тесном взаимодействии с командой.
                             </li>
                         </ul>
                         <p class="stack">Angular, TypeScript, RxJS, GraphQL</p>
@@ -323,38 +349,61 @@
                     </div>
                     <div class="timeline-item__content">
                         <h3>Frontend Developer</h3>
-                        <p data-i18n="experienceThreeIntro">Разработка государственных аналитических систем.</p>
+                        <p data-i18n="experienceThreeIntro">Аналитические и информационные системы для государственного сектора РФ.</p>
                         <ul>
-                            <li data-i18n="experienceThreeBulletOne">Разрабатывал интерфейсы мониторинга и аналитики
-                                данных.
+                            <li data-i18n="experienceThreeBulletOne">Работал над несколькими государственными системами, включая проект обработки обращений жителей Москвы и Московской области.
                             </li>
-                            <li data-i18n="experienceThreeBulletTwo">Реализовывал визуализацию данных: карты,
-                                dashboards, аналитические панели.
+                            <li data-i18n="experienceThreeBulletTwo">Разрабатывал аналитические интерфейсы, мониторинг и отображение информации на карте с привязкой к адресам.
                             </li>
-                            <li data-i18n="experienceThreeBulletThree">Участвовал в разработке системы мониторинга
-                                COVID.
+                            <li data-i18n="experienceThreeBulletThree">Во время COVID участвовал в добавлении функциональности для работы с данными о заболевших и выздоровевших.
                             </li>
+                            <li data-i18n="experienceThreeBulletFour">При необходимости помогал коллегам разбираться с проблемами Java-backend.</li>
                         </ul>
-                        <p class="stack">Angular, JavaScript, Vue, PostgreSQL, GraphQL</p>
+                        <p class="stack">Angular, JavaScript, Vue.js, GraphQL, PostgreSQL, maps and data visualization</p>
                     </div>
                 </article>
                 <article class="timeline-item reveal">
                     <div class="timeline-item__meta">
-                        <span>2013 — 2018</span>
-                        <strong data-i18n="experienceFourCompany">Тандер и университетские проекты</strong>
+                        <span data-i18n="experienceFourPeriod">10.2016 — 06.2018</span>
+                        <strong data-i18n="experienceFourCompany">Тандер</strong>
+                    </div>
+                    <div class="timeline-item__content">
+                        <h3>Frontend Developer</h3>
+                        <p data-i18n="experienceFourIntro">Внутренние системы обработки и агрегации данных.</p>
+                        <ul>
+                            <li data-i18n="experienceFourBulletOne">С нуля вместе с backend-разработчиком создавал внутреннее web-приложение для сбора данных с распределённых серверов.</li>
+                            <li data-i18n="experienceFourBulletTwo">Отвечал за frontend-часть решения, статусы проекта и поддержку изменения структуры итоговых данных.</li>
+                            <li data-i18n="experienceFourBulletThree">Продолжал работать с базами данных, миграциями данных и оптимизацией запросов.</li>
+                        </ul>
+                        <p class="stack">JavaScript, SQL, web development, database integrations</p>
+                    </div>
+                </article>
+                <article class="timeline-item reveal">
+                    <div class="timeline-item__meta">
+                        <span data-i18n="experienceFivePeriod">01.2014 — 10.2016</span>
+                        <strong data-i18n="experienceFiveCompany">Тандер</strong>
+                    </div>
+                    <div class="timeline-item__content">
+                        <h3>Database Developer</h3>
+                        <p data-i18n="experienceFiveIntro">Базы данных, миграции и подготовка данных для внутренних систем.</p>
+                        <ul>
+                            <li data-i18n="experienceFiveBulletOne">Разрабатывал и поддерживал базы данных, оптимизировал запросы и выполнял миграции.</li>
+                            <li data-i18n="experienceFiveBulletTwo">Взаимодействовал с web-разработчиками, обеспечивая данные и интеграции для внутренних web-систем.</li>
+                        </ul>
+                        <p class="stack">SQL, MS SQL, PostgreSQL, MySQL, Teradata, ETL/data migration</p>
+                    </div>
+                </article>
+                <article class="timeline-item reveal">
+                    <div class="timeline-item__meta">
+                        <span data-i18n="experienceSixPeriod">04.2013 — 12.2013</span>
+                        <strong data-i18n="experienceSixCompany">Кубанский государственный аграрный университет</strong>
                     </div>
                     <div class="timeline-item__content">
                         <h3>Full Stack Developer</h3>
-                        <p data-i18n="experienceFourIntro">Разработка внутренних систем обработки и анализа данных.</p>
+                        <p data-i18n="experienceSixIntro">Web- и database-компоненты системы учёта природных ресурсов для государственного сектора.</p>
                         <ul>
-                            <li data-i18n="experienceFourBulletOne">Разрабатывал системы агрегации данных и
-                                отчетности.
-                            </li>
-                            <li data-i18n="experienceFourBulletTwo">Оптимизировал SQL-запросы, автоматизировал отчеты и
-                                работал с миграцией данных.
-                            </li>
+                            <li data-i18n="experienceSixBulletOne">Разрабатывал компоненты проекта, созданного в период подготовки к Олимпиаде в Сочи 2014.</li>
                         </ul>
-                        <p class="stack">JavaScript, SQL, PostgreSQL, MySQL, PHP, MS SQL, Teradata</p>
                     </div>
                 </article>
             </div>
@@ -365,18 +414,60 @@
         <div class="container two-column">
             <div class="section-heading reveal">
                 <p class="eyebrow" data-i18n="projectsEyebrow">Проекты</p>
-                <h2 id="projects-title" data-i18n="projectsTitle">AI Assistant для школьников</h2>
+                <h2 id="projects-title" data-i18n="projectsTitle">Выбранные проекты</h2>
             </div>
-            <article class="project-card reveal">
-                <div>
-                    <h3>Telegram Bot</h3>
-                    <p data-i18n="projectText">
-                        Telegram-бот с использованием LLM: генерация вопросов, объяснение тем и интерактивная система
-                        обучения.
-                    </p>
-                </div>
-                <p class="stack">Python, Telegram API, YandexGPT, GigaChat, MySQL</p>
-            </article>
+            <div class="project-list">
+                <article class="project-card reveal">
+                    <div>
+                        <h3 data-i18n="projectOneTitle">Semantic documentation search</h3>
+                        <p data-i18n="projectOneText">
+                            POC поиска по документации на OpenSearch с языковыми моделями Hugging Face.
+                        </p>
+                    </div>
+                    <p class="stack">OpenSearch, Hugging Face, LLM, semantic search</p>
+                </article>
+                <article class="project-card reveal">
+                    <div>
+                        <h3 data-i18n="projectTwoTitle">Corporate web platform</h3>
+                        <p data-i18n="projectTwoText">
+                            Участие в создании корпоративной web-платформы с нуля на Next.js и Strapi, включая frontend, CMS-слой и POC движка диаграмм.
+                        </p>
+                    </div>
+                    <p class="stack">Next.js, TypeScript, Strapi, diagrams</p>
+                </article>
+                <article class="project-card reveal">
+                    <div>
+                        <h3>Telegram Bot</h3>
+                        <p data-i18n="projectThreeText">
+                            Telegram-бот с использованием LLM: генерация вопросов, объяснение тем и интерактивная система обучения.
+                        </p>
+                    </div>
+                    <p class="stack">Python, Telegram API, YandexGPT, GigaChat, MySQL</p>
+                </article>
+            </div>
+        </div>
+    </section>
+
+    <section class="section" id="education" aria-labelledby="education-title">
+        <div class="container two-column">
+            <div class="section-heading reveal">
+                <p class="eyebrow" data-i18n="educationEyebrow">Образование и языки</p>
+                <h2 id="education-title" data-i18n="educationTitle">Инженерная база и международный фокус</h2>
+            </div>
+            <div class="education-grid">
+                <article class="education-card reveal">
+                    <h3 data-i18n="educationUniversity">Кубанский государственный аграрный университет</h3>
+                    <p data-i18n="educationDegree">2007 — 2012, инженер, информационные системы и технологии.</p>
+                </article>
+                <article class="education-card reveal">
+                    <h3 data-i18n="languagesTitle">Языки</h3>
+                    <p data-i18n="languagesText">Русский — родной; английский — C1 (goFLUENT); французский — базовый.</p>
+                </article>
+                <article class="education-card reveal">
+                    <h3 data-i18n="workSetupTitle">Формат работы</h3>
+                    <p data-i18n="workSetupText">8+ лет полностью удалённой работы; открыт к международным contractor/B2B форматам и релокации.</p>
+                </article>
+            </div>
         </div>
     </section>
 
@@ -390,6 +481,8 @@
             <div class="contact-actions">
                 <a class="button button--primary" href="mailto:dmitriy.bardin90@gmail.com">Email</a>
                 <a class="button" href="https://t.me/divirus" target="_blank" rel="noreferrer">Telegram</a>
+                <a class="button" href="https://www.linkedin.com/in/dmitriy-bardin/" target="_blank" rel="noreferrer">LinkedIn</a>
+                <a class="button" href="https://github.com/divirus" target="_blank" rel="noreferrer">GitHub</a>
                 <a class="button button--ghost"
                    data-cv-download
                    href="assets/docs/dmitry-bardin-cv-ru.pdf"

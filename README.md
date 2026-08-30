@@ -1,60 +1,31 @@
-# 🚀 Personal CV Website
+# Personal CV Website
 
-A modern, fast, and SEO-optimized personal resume website built to
-showcase my experience as a Senior Frontend Developer.
+Static bilingual resume website for Dmitriy Bardin. The site is built with HTML, CSS, and vanilla JavaScript, so it can be deployed directly to GitHub Pages.
 
-------------------------------------------------------------------------
+## Structure
 
-## 🛠 Tech Stack
+- `index.html` — semantic markup and fallback Russian content.
+- `styles/main.css` — design tokens, responsive layout, cards, navigation, and interaction states.
+- `scripts/translations.js` — Russian and English site copy.
+- `scripts/main.js` — language switching, CV download switching, mobile menu, active navigation, scroll progress, and reveal animations.
+- `assets/images` — optimized profile images and favicon.
+- `assets/docs` — current Russian and English PDF resumes.
 
-* **Core:** HTML5, CSS3, Vanilla JavaScript (ES6+)
-* **Architecture:** Modular structure, component-based CSS
-* **Styling:** Custom CSS (design tokens, responsive layout)
-* **Performance:** Optimized assets, WebP images, preload
-* **SEO:** Meta tags, Open Graph, structured data (JSON-LD)
-* **i18n:** Custom translation system
-* **Accessibility:** ARIA, semantic HTML, skip links
+## Local Preview
 
-------------------------------------------------------------------------
+Open `index.html` directly in a browser, or run a small local server:
 
-## ✨ Features
+```bash
+python3 -m http.server 8080
+```
 
--   ⚡ Fast and lightweight (optimized assets, WebP images)
--   🌍 Multi-language support (i18n)
--   ♿ Accessibility-friendly (ARIA, skip links)
--   🔍 SEO optimized (meta tags, Open Graph, schema.org)
--   📱 Fully responsive design
--   🎯 Clean and minimal UI
+Russian version: `http://localhost:8080/`
 
-------------------------------------------------------------------------
+English version: `http://localhost:8080/?lang=en`
 
-## 📈 Performance & SEO
+## GitHub Pages
 
-This project focuses on: 
-- Optimized loading performance 
-- Clean semantic HTML 
-- Search engine visibility 
-- Social media sharing support
-
-------------------------------------------------------------------------
-
-## 📬 Contact
-
-Feel free to reach out:
-
--   Email: your@email.com
--   LinkedIn: your profile
--   Telegram: if applicable
-
-------------------------------------------------------------------------
-
-## 📄 License
-
-This project is open-source and available under the MIT License.
-
-------------------------------------------------------------------------
-
-## 💡 Notes
-
-This project is continuously evolving as I improve design, performance,
-and UX.
+1. Push the project files to a GitHub repository.
+2. Open repository settings and go to `Pages`.
+3. Choose deployment from the `main` branch and the repository root.
+4. Save the settings and wait for the Pages URL to become available.

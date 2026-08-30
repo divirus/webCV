@@ -185,11 +185,13 @@ languageButtons.forEach((button) => {
 });
 
 window.addEventListener('scroll', () => {
+  revealInitialViewportNodes();
   updateProgress();
   setActiveNavItem();
 }, { passive: true });
 
 window.addEventListener('resize', closeMenu);
+window.addEventListener('hashchange', revealInitialViewportNodes);
 
 if ('IntersectionObserver' in window) {
   const revealObserver = new IntersectionObserver((entries) => {
@@ -203,6 +205,7 @@ if ('IntersectionObserver' in window) {
 
   revealNodes.forEach((node) => revealObserver.observe(node));
   requestAnimationFrame(revealInitialViewportNodes);
+  window.setTimeout(() => revealNodes.forEach(revealNode), 500);
 } else {
   revealNodes.forEach(revealNode);
 }
