@@ -9,7 +9,7 @@ const translatableNodes = [...document.querySelectorAll('[data-i18n]')];
 const attributeNodes = [...document.querySelectorAll('[data-i18n-attr]')];
 const revealNodes = [...document.querySelectorAll('.reveal')];
 const cvDownloadLinks = [...document.querySelectorAll('[data-cv-download]')];
-const assetVersion = '20260831';
+const assetVersion = '20260831-2';
 const sections = navLinks
   .map((link) => document.querySelector(link.getAttribute('href')))
   .filter(Boolean);
