@@ -4,11 +4,11 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta name="description"
-          content="Дмитрий Бардин, Senior / Lead Frontend Developer: React, Next.js, TypeScript, enterprise frontend architecture, semantic search, Strapi, data-intensive web applications.">
+          content="Дмитрий Бардин, Senior / Lead Frontend Developer: React, Next.js, TypeScript, Angular, Vue 3, enterprise frontend architecture, semantic search, performance troubleshooting.">
     <meta name="theme-color" content="#eef4f7">
     <meta property="og:title" content="Дмитрий Бардин — Senior / Lead Frontend Developer">
     <meta property="og:description"
-          content="13+ лет в разработке, frontend-фокус с 2016 года. React, Next.js, TypeScript, Angular, Strapi, OpenSearch.">
+          content="13+ лет в разработке, frontend-фокус с 2016 года. React, Next.js, TypeScript, Angular, Vue 3, Strapi, OpenSearch.">
     <meta property="og:type" content="website">
     <meta property="og:image" content="assets/images/profile.jpg">
     <title>Дмитрий Бардин — Senior / Lead Frontend Developer</title>
@@ -16,8 +16,12 @@
     <link rel="preload" href="assets/images/profile.webp" as="image" type="image/webp">
     <script>
         document.documentElement.classList.add('is-enhanced');
+
+        if (window.location.hash) {
+            document.documentElement.classList.add('is-hash-jump');
+        }
     </script>
-    <link rel="stylesheet" href="styles/main.css">
+    <link rel="stylesheet" href="styles/main.css?v=20260831">
     <script type="application/ld+json">
         {
             "@context": "https://schema.org",
@@ -42,11 +46,16 @@
                 "Next.js",
                 "TypeScript",
                 "Angular",
+                "Vue 3",
+                "Vuex",
+                "TipTap",
                 "Frontend Architecture",
+                "Performance troubleshooting",
                 "Semantic search",
                 "OpenSearch",
                 "Strapi",
-                "Hugging Face language models"
+                "Hugging Face language models",
+                "Technical leadership"
             ]
         }
     </script>
@@ -93,13 +102,13 @@
                 <p class="eyebrow" data-i18n="role">Senior / Lead Frontend Developer</p>
                 <h1 id="hero-title" data-i18n="name">Дмитрий Бардин</h1>
                 <p class="hero__lead" data-i18n="heroLead">
-                    Разрабатываю enterprise- и data-intensive web-приложения на React, Next.js и TypeScript, работаю со
-                    сложной бизнес-логикой, интеграциями и данными.
+                    Разрабатываю enterprise- и data-intensive web-приложения на React, Next.js, TypeScript, Angular и
+                    Vue 3, работаю со сложной бизнес-логикой, интеграциями и данными.
                 </p>
                 <div class="hero__actions" aria-label="Основные действия" data-i18n-attr="aria-label:heroActionsAria">
                     <a class="button button--primary"
                        data-cv-download
-                       href="assets/docs/dmitry-bardin-cv-ru.pdf"
+                       href="assets/docs/dmitry-bardin-cv-ru.pdf?v=20260831"
                        download
                        data-i18n="downloadCv"
                     >
@@ -162,14 +171,13 @@
             <div class="rich-text reveal">
                 <p data-i18n="summaryTextOne">
                     Senior Frontend Developer: 13+ лет в разработке; с 2016 года основная специализация — frontend.
-                    Разрабатываю enterprise- и data-intensive web-приложения на React, Next.js и TypeScript, работаю со
-                    сложной бизнес-логикой, интеграциями и данными.
+                    Разрабатываю enterprise- и data-intensive web-приложения на React, Next.js, TypeScript, Angular и
+                    Vue 3, работаю со сложной бизнес-логикой, интеграциями и данными.
                 </p>
                 <p data-i18n="summaryTextTwo">
-                    Есть опыт самостоятельного владения frontend-частью продукта, миграции Angular → React, участия в
-                    выборе технологического стека и создания новых решений с нуля. Работаю напрямую с Product, Design,
-                    Backend и QA, декомпозирую задачи, участвую в технических решениях, распределял задачи и менторил
-                    junior-разработчика.
+                    Сильные стороны: техническая автономность, ownership frontend-направлений, сложные configuration и
+                    data UI, интеграция с backend/API, архитектура на уровне подсистем, технические исследования и POC,
+                    troubleshooting производительности. Провожу code review на уровне команды и менторю junior-разработчиков.
                 </p>
             </div>
         </div>
@@ -186,28 +194,27 @@
             <div class="achievement-grid">
                 <article class="achievement-card reveal">
                     <span class="achievement-card__number">01</span>
-                    <h3 data-i18n="achievementOneTitle">Миграция Angular → React</h3>
-                    <p data-i18n="achievementOneText">Участвовал в миграции ADCM на React в команде из 3
-                        frontend-разработчиков; переход сделал кодовую базу чище, удобнее для поддержки и повысил
-                        производительность приложения.</p>
+                    <h3 data-i18n="achievementOneTitle">Complex configuration UI</h3>
+                    <p data-i18n="achievementOneText">Развивал ADCM и миграцию Angular → React: архитектурные решения,
+                        hierarchical dynamic tree и сложные многоуровневые configuration-интерфейсы.</p>
                 </article>
                 <article class="achievement-card reveal">
                     <span class="achievement-card__number">02</span>
                     <h3 data-i18n="achievementTwoTitle">Semantic search по документации</h3>
-                    <p data-i18n="achievementTwoText">Провёл исследование решений и реализовал POC на OpenSearch с
-                        языковыми моделями Hugging Face.</p>
+                    <p data-i18n="achievementTwoText">Обновил OpenSearch, проверил Hugging Face models, собрал pipeline
+                        подготовки данных и POC semantic queries для документации.</p>
                 </article>
                 <article class="achievement-card reveal">
                     <span class="achievement-card__number">03</span>
-                    <h3 data-i18n="achievementThreeTitle">Greenfield web platform</h3>
-                    <p data-i18n="achievementThreeText">Участвовал в создании корпоративной web-платформы с нуля на
-                        Next.js и Strapi, включая frontend, CMS-слой и POC движка диаграмм.</p>
+                    <h3 data-i18n="achievementThreeTitle">UI kit и diagram engine</h3>
+                    <p data-i18n="achievementThreeText">Выделил корпоративный UI kit в reusable repository и спроектировал
+                        TypeScript/CSS POC движка для responsive-диаграмм, связей и анимаций.</p>
                 </article>
                 <article class="achievement-card reveal">
                     <span class="achievement-card__number">04</span>
-                    <h3 data-i18n="achievementFourTitle">Финансовые продукты</h3>
-                    <p data-i18n="achievementFourText">Был основным frontend-разработчиком pre-release продукта выбора
-                        кредита и рассрочки для крупной retail-платформы.</p>
+                    <h3 data-i18n="achievementFourTitle">Apache Amoro frontend</h3>
+                    <p data-i18n="achievementFourText">Быстро вошёл в крупный Vue 3/Vuex legacy codebase, координирую
+                        API/data formats и разбираю лишние запросы, rerenders и медленные UI-сценарии.</p>
                 </article>
             </div>
         </div>
@@ -230,7 +237,9 @@
                         <li>JavaScript</li>
                         <li>Redux</li>
                         <li>RxJS</li>
-                        <li>Vue.js</li>
+                        <li>Vue 3</li>
+                        <li>Vuex</li>
+                        <li>TipTap</li>
                         <li>HTML</li>
                         <li>CSS</li>
                     </ul>
@@ -239,23 +248,26 @@
                     <h3 id="architecture-title">Architecture</h3>
                     <ul class="tag-list">
                         <li>Frontend Architecture</li>
-                        <li>Scalable UI</li>
+                        <li>Subsystem Architecture</li>
                         <li>Enterprise Applications</li>
+                        <li>Complex Configuration UI</li>
                         <li>Maintainability</li>
-                        <li>Performance</li>
+                        <li>Performance Troubleshooting</li>
                         <li>Migrations</li>
                         <li>REST API</li>
                         <li>GraphQL</li>
                     </ul>
                 </section>
                 <section class="skill-group reveal" aria-labelledby="ai-title">
-                    <h3 id="ai-title">AI &amp; Data</h3>
+                    <h3 id="ai-title">R&amp;D, CMS &amp; Data</h3>
                     <ul class="tag-list">
-                        <li>LLM integrations</li>
+                        <li>Technical Research</li>
+                        <li>POC Prototyping</li>
                         <li>Semantic search</li>
                         <li>Hugging Face</li>
                         <li>OpenSearch</li>
                         <li>Strapi</li>
+                        <li>REST API</li>
                         <li>PostgreSQL</li>
                         <li>MS SQL</li>
                         <li>MySQL</li>
@@ -269,8 +281,8 @@
                         <li>Jenkins</li>
                         <li>CI/CD</li>
                         <li>Git</li>
-                        <li>Jest</li>
                         <li>Vitest</li>
+                        <li>Jest</li>
                         <li>Webpack</li>
                         <li>Vite</li>
                         <li>Yarn</li>
@@ -280,9 +292,10 @@
                     <h3 id="leadership-title">Leadership</h3>
                     <ul class="tag-list">
                         <li>Task decomposition</li>
-                        <li>Delegation</li>
+                        <li>Team-wide code review</li>
                         <li>Mentoring</li>
-                        <li>Technical decisions</li>
+                        <li>Technical guidance</li>
+                        <li>Naming &amp; decomposition</li>
                         <li>Product collaboration</li>
                     </ul>
                 </section>
@@ -299,27 +312,29 @@
             <div class="timeline">
                 <article class="timeline-item reveal">
                     <div class="timeline-item__meta">
-                        <span data-i18n="experienceOnePeriod">2022 — настоящее время</span>
+                        <span data-i18n="experienceOnePeriod">04.2022 — настоящее время</span>
                         <strong>Arenadata</strong>
                     </div>
                     <div class="timeline-item__content">
-                        <h3>Senior Frontend Developer</h3>
-                        <p data-i18n="experienceOneIntro">Enterprise-продукты для управления и обработки данных.</p>
+                        <h3>Frontend Developer</h3>
+                        <p data-i18n="experienceOneIntro">Enterprise-продукты и web-платформы для управления данными и data infrastructure.</p>
                         <ul>
-                            <li data-i18n="experienceOneBulletOne">Самостоятельно отвечал за frontend-разработку и поддержку Angular-версии Arenadata Cluster Manager.
+                            <li data-i18n="experienceOneBulletOne">В 2022–2023 был единственным frontend-инженером Angular-версии ADCM: выбирал подходы, принимал архитектурные решения и строил сложные configuration UI.
                             </li>
-                            <li data-i18n="experienceOneBulletTwo">Участвовал в миграции ADCM с Angular на React в команде из 3 frontend-разработчиков.
+                            <li data-i18n="experienceOneBulletTwo">В команде миграции ADCM Angular → React участвовал в архитектурных решениях, code review и разработке hierarchical dynamic tree.
                             </li>
-                            <li data-i18n="experienceOneBulletThree">Развивал несколько продуктов Arenadata, работая напрямую с Product, Design, Backend и QA.
+                            <li data-i18n="experienceOneBulletThree">Развивал корпоративную web-платформу на Next.js/Strapi, предложил Next.js, внедрил TipTap и исследовал Strapi custom components.
                             </li>
-                            <li data-i18n="experienceOneBulletFour">Участвовал в создании корпоративной web-платформы с нуля на Next.js и Strapi, включая frontend и CMS-часть.
+                            <li data-i18n="experienceOneBulletFour">Выделил корпоративный UI kit в reusable repository и почти завершил TypeScript/CSS POC движка responsive-диаграмм.
                             </li>
-                            <li data-i18n="experienceOneBulletFive">Исследовал associative/semantic search по документации и собрал POC на OpenSearch с Hugging Face language models.
+                            <li data-i18n="experienceOneBulletFive">Исследовал бесплатный semantic search для документации: OpenSearch, Hugging Face models, подготовка данных, semantic queries и оптимизация долгого pipeline.
                             </li>
-                            <li data-i18n="experienceOneBulletSix">Менторил junior-разработчика и при необходимости распределял задачи между разработчиками.
+                            <li data-i18n="experienceOneBulletSix">С января 2026 работаю над Apache Amoro frontend на Vue 3/Vuex: разбираю legacy codebase, согласую API/data formats и troubleshooting производительности.
+                            </li>
+                            <li data-i18n="experienceOneBulletSeven">Провожу team-wide code review, покрываю сложные состояния Vitest-тестами и менторю junior-разработчика.
                             </li>
                         </ul>
-                        <p class="stack">React, Next.js, TypeScript, Angular, Strapi, OpenSearch, REST API, Recharts, Vue.js</p>
+                        <p class="stack">React, Next.js, TypeScript, Angular, Vue 3, Vuex, Strapi, TipTap, OpenSearch, Hugging Face, Vitest, REST API, Recharts</p>
                     </div>
                 </article>
                 <article class="timeline-item reveal">
@@ -421,16 +436,18 @@
                     <div>
                         <h3 data-i18n="projectOneTitle">Semantic documentation search</h3>
                         <p data-i18n="projectOneText">
-                            POC поиска по документации на OpenSearch с языковыми моделями Hugging Face.
+                            POC поиска по документации: OpenSearch upgrade, Hugging Face models, pipeline подготовки
+                            данных, semantic queries и оптимизация долгой подготовки.
                         </p>
                     </div>
                     <p class="stack">OpenSearch, Hugging Face, LLM, semantic search</p>
                 </article>
                 <article class="project-card reveal">
                     <div>
-                        <h3 data-i18n="projectTwoTitle">Corporate web platform</h3>
+                        <h3 data-i18n="projectTwoTitle">Reusable UI kit &amp; diagram engine</h3>
                         <p data-i18n="projectTwoText">
-                            Участие в создании корпоративной web-платформы с нуля на Next.js и Strapi, включая frontend, CMS-слой и POC движка диаграмм.
+                            Корпоративный UI kit для React/Next.js и TypeScript/CSS POC движка для сложных responsive
+                            diagrams, connections и animations.
                         </p>
                     </div>
                     <p class="stack">Next.js, TypeScript, Strapi, diagrams</p>
@@ -465,7 +482,7 @@
                 </article>
                 <article class="education-card reveal">
                     <h3 data-i18n="workSetupTitle">Формат работы</h3>
-                    <p data-i18n="workSetupText">8+ лет полностью удалённой работы; открыт к международным contractor/B2B форматам и релокации.</p>
+                    <p data-i18n="workSetupText">Гражданство РФ; 8+ лет полностью удалённой работы; открыт к удалённой работе и релокации; целевые роли — Senior / hands-on Lead Frontend Developer.</p>
                 </article>
             </div>
         </div>
@@ -485,7 +502,7 @@
                 <a class="button" href="https://github.com/divirus" target="_blank" rel="noreferrer">GitHub</a>
                 <a class="button button--ghost"
                    data-cv-download
-                   href="assets/docs/dmitry-bardin-cv-ru.pdf"
+                   href="assets/docs/dmitry-bardin-cv-ru.pdf?v=20260831"
                    download
                    data-i18n="pdfCv"
                 >
@@ -503,7 +520,7 @@
     </div>
 </footer>
 
-<script src="scripts/translations.js" defer></script>
-<script src="scripts/main.js" defer></script>
+<script src="scripts/translations.js?v=20260831" defer></script>
+<script src="scripts/main.js?v=20260831" defer></script>
 </body>
 </html>

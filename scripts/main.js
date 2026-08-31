@@ -9,6 +9,7 @@ const translatableNodes = [...document.querySelectorAll('[data-i18n]')];
 const attributeNodes = [...document.querySelectorAll('[data-i18n-attr]')];
 const revealNodes = [...document.querySelectorAll('.reveal')];
 const cvDownloadLinks = [...document.querySelectorAll('[data-cv-download]')];
+const assetVersion = '20260831';
 const sections = navLinks
   .map((link) => document.querySelector(link.getAttribute('href')))
   .filter(Boolean);
@@ -24,7 +25,7 @@ const updateCvLinks = (language) => {
     ? 'dmitry-bardin-cv-ru.pdf'
     : 'dmitry-bardin-cv-en.pdf';
 
-  const filePath = `assets/docs/${fileName}`;
+  const filePath = `assets/docs/${fileName}?v=${assetVersion}`;
 
   cvDownloadLinks.forEach((link) => {
     link.href = filePath;
@@ -136,6 +137,37 @@ const revealInitialViewportNodes = () => {
   revealNodes.filter(isNodeInViewport).forEach(revealNode);
 };
 
+const getHashTarget = () => {
+  const targetId = decodeURIComponent(window.location.hash.slice(1));
+
+  return targetId ? document.getElementById(targetId) : null;
+};
+
+const scrollToHashTarget = ({ instant = false } = {}) => {
+  const target = getHashTarget();
+
+  if (!target) return;
+
+  requestAnimationFrame(() => {
+    const root = document.documentElement;
+    const previousScrollBehavior = root.style.scrollBehavior;
+
+    if (instant) {
+      root.style.scrollBehavior = 'auto';
+    }
+
+    target.scrollIntoView({ block: 'start' });
+    root.style.scrollBehavior = previousScrollBehavior;
+    revealInitialViewportNodes();
+    updateProgress();
+    setActiveNavItem();
+  });
+};
+
+const finishInitialHashJump = () => {
+  document.documentElement.classList.remove('is-hash-jump');
+};
+
 const closeMenu = () => {
   body.classList.remove('is-menu-open');
   nav?.classList.remove('is-open');
@@ -191,7 +223,10 @@ window.addEventListener('scroll', () => {
 }, { passive: true });
 
 window.addEventListener('resize', closeMenu);
-window.addEventListener('hashchange', revealInitialViewportNodes);
+window.addEventListener('hashchange', () => {
+  scrollToHashTarget();
+  revealInitialViewportNodes();
+});
 
 if ('IntersectionObserver' in window) {
   const revealObserver = new IntersectionObserver((entries) => {
@@ -217,3 +252,8 @@ if (yearNode) {
 applyLanguage(getInitialLanguage());
 updateProgress();
 setActiveNavItem();
+scrollToHashTarget({ instant: true });
+window.setTimeout(() => {
+  scrollToHashTarget({ instant: true });
+  finishInitialHashJump();
+}, 300);
